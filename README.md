@@ -12,8 +12,11 @@
 4)This command is used to list the created topics
 `` .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list ``
 
-5)This command is used to run kafka producer
+5)This command is used to compile and build jar file.
+```mvn clean compile assembly:single```
+
+6)This command is used to run kafka producer
 `` java -cp target/kafka-zookeeper-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatakafka.CustomProducer test ``
 
-6)This command is used to run consumer 
+7)This command is used to run consumer 
 `` java -cp target/kafka-zookeeper-1.0-SNAPSHOT-jar-with-dependencies.jar edu.nwmissouri.bigdatakafka.CustomConsumer test group1 ``
